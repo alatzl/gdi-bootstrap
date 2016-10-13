@@ -22,8 +22,20 @@ You'll need to have some familiarity with HTML and CSS. Our Intro to HTML and CS
 
  - What are frameworks and why are they necessary?
  - Why use Bootstrap?
- - Basic building blocks (grid, type styles, normalization, tables, lists, etc.)
- - Customizing Bootstrap with your own styles
- - Components (Jumbotron, Navigation)
+ - Basic building blocks
+    - mobile first
+    - grid system
+    - typography
+    - images
+    - helper classes
+    - responsive utilities
+- Components
+    - navbar
+    - jumbotron
+    - glyphicons
+- Javascript
+    - collapse
+    - modals
+    - scrollspy
 
 
