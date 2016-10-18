@@ -40,6 +40,11 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		<style type="text/css">
+		.reveal .slides section li {
+			margin-bottom: .3em;
+		}
+		</style>
 	</head>
 
 	<body>
@@ -53,8 +58,7 @@
 					<img src="img/circle-gdi-logo.png" alt="GDI Logo" class="noborder"/>
 					<h2>Intro to Bootstrap</h2>
 					<br/>
-					<p>Alexandra Atzl</p>
-					<a href="http://www.alexandraatzl.com">alexandraatzl.com</a>
+					<p>with <a href="http://www.alexandraatzl.com">Alexandra Atzl</a></p>
 				</section>
 
 				<section>
@@ -102,7 +106,15 @@
 				</section>
 
 				<section>
-					<h3>Mobile first?</h3>
+					<h3>Would you ever not use Bootstrap?</h3>
+					<ul>
+						<li class="fragment">Highly customized styling</li>
+						<li class="fragment">Single page, minimally-styled site with no need for extras (but you could use just the parts of Bootstrap that are necessary!)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Mobile first</h3>
 					<ul>
 						<li class="fragment">It's easier to add things in than to take them out.</li>
 						<li class="fragment">Progressive enhancement vs. graceful degradation.</li>
@@ -146,15 +158,14 @@
 				<section>
 					<h3>Grid</h3>
 					<ul>
-						<li><a href="http://getbootstrap.com/css/#grid-example-basic" target="_blank">getbootstrap.com/css/#grid-example-basic</a></li>
-						<li>Rows create horizontal groups of columns</li>
-						<li>Rows must be placed within a <code>.container</code> or <code>.container-fluid</code></li>
-						<li>Rows can be nested within columns</li>
-						<li>Classes are based on screen size (xs, sm, md, lg)</li>
+						<li class="fragment"><a href="http://getbootstrap.com/css/#grid-example-basic" target="_blank">getbootstrap.com/css/#grid-example-basic</a></li>
+						<li class="fragment">Rows create horizontal groups of columns</li>
+						<li class="fragment">Rows must be placed within a <code>.container</code> or <code>.container-fluid</code></li>
+						<li class="fragment">Rows can be nested within columns</li>
+						<li class="fragment">Classes are based on screen size (xs, sm, md, lg)</li>
 					</ul>
 
 					<aside class="notes">
-
 						<ul>
 							<li>Media queries:
 								<ul>
@@ -173,7 +184,7 @@
 
 				<section>
 					<h3>Code Example</h3>
-<pre><code contenteditable class="xml">
+<pre><code class="xml">
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-4">
@@ -190,7 +201,8 @@
 </code></pre>
 				</section>
 
-				<section>
+			<!-- Maybe live-code a little bit here -->
+			<!-- 	<section>
 					<h2>Let's try it!</h2>
 					<ol>
 						<li>Create a single column layout</li>
@@ -204,17 +216,31 @@
 							<li>Try it with <code>.container</code></li>
 							<li>Try nesting</li>
 						</ul>
-				</section>
+				</section> -->
 
 				<section>
 					<h3>More CSS goodies!</h3>
 					<ul>
-						<li class="fragment"><a href="http://getbootstrap.com/css/#type-alignment" target="_blank">Alignment classes</a> (<code>.text-left</code>, <code>.text-center</code>, <code>.text-right</code>)</li>
-						<li class="fragment"><a href="http://getbootstrap.com/css/#type-transformation" target="_blank">Transformation classes</a> (<code>.text-lowercase</code>, <code>.text-uppercase</code>, <code>.text-capitalize</code>)</li>
+						<li class="fragment">
+							<a href="http://getbootstrap.com/css/#type-alignment" target="_blank">Alignment classes</a>
+							<ul>
+								<li class="fragment"><code>.text-left</code></li>
+								<li class="fragment"><code>.text-center</code></li>
+								<li class="fragment"><code>.text-right</code></li>
+							</ul>
+						</li>
+						<li class="fragment">
+							<a href="http://getbootstrap.com/css/#type-transformation" target="_blank">Transformation classes</a>
+							<ul>
+								<li class="fragment"><code>.text-lowercase</code></li>
+								<li class="fragment"><code>.text-uppercase</code></li>
+								<li class="fragment"><code>.text-capitalize</code></li>
+							</ul>
+						</li>
 					</ul>
 				</section>
 
-					<section>
+			<!-- 	<section>
 					<h3>Code Example</h3>
 <pre><code contenteditable class="xml">
 <div class="row">
@@ -238,17 +264,17 @@
 	</div>
 </div>
 </code></pre>
-				</section>
+				</section> -->
 
-				<section>
+			<!-- 	<section>
 					<h3>Let's try it!</h3>
 					<ol>
 						<li>Make one of your columns aligned to the right or center.</li>
 						<li>Add a line to the top of your page that is in all caps.</li>
 					</ol>
-				</section>
+				</section> -->
 
-				<section>
+				<!-- <section>
 					<h3>Lists &amp; Tables</h3>
 					<ul>
 						<li class="fragment">
@@ -269,15 +295,15 @@
 							</ul>
 						</li>
 					</ul>
-				</section>
+				</section> -->
 
-				<section>
+		<!-- 		<section>
 					<h3>Let's try it!</h3>
 					<ol>
 						<li>Add a list of something to your webpage.</li>
 						<li>Add a table to your webpage.</li>
 					</ol>
-				</section>
+				</section> -->
 
 				<section>
 					<h3>Helper Classes</h3>
@@ -296,14 +322,22 @@
 						<li><code>.hidden-*-*</code></li>
 						<li><code>.visible-*-*</code></li>
 					</ul>
+					<br/><br/>
+					<h3>And Image Classes</h3>
+					<ul>
+						<li><code>.img-responsive</code></li>
+						<li><code>.img-circle</code>, <code>.img-rounded</code>, <code>.img-thumbnail</code></li>
+					</ul>
 				</section>
 
-				<section>
+				<!-- live-code a little here? -->
+
+				<!-- <section>
 					<h3>Let's try it!</h3>
 					<ul>
 						<li>Let's go back to our 3-column layout and change it so that the third column only shows up on medium and large screen widths.</li>
 					</ul>
-				</section>
+				</section> -->
 
 				<section>
 					<h3>Components</h3>
@@ -318,8 +352,26 @@
 				</section>
 
 				<section>
-					<h3>Code Example</h3>
-
+					<h3>Code Example: Navbar</h3>
+<pre><code class="xml">
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-list">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="nav-list">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</code></pre>
 				</section>
 
 				<section>
@@ -329,7 +381,73 @@
 						<li class="fragment">Scrollspy</li>
 						<li class="fragment">Tooltips</li>
 						<li class="fragment">Modals</li>
+						<li class="fragment">and more!</li>
 					</ul>
+				</section>
+
+				<section>
+					<h3>Let's try it all out!</h3>
+					<ol>
+						<li>Create a folder name <code>resume</code> on your computer.</li>
+						<li>Move the <code>/css</code>, <code>/js</code>, and <code>/font</code> folders you downloaded earlier into <code>/resume</code>.</li>
+						<li>Create an index.html file inside <code>/resume</code>. You can copy and paste the Bootstrap starter file from <a href="http://getbootstrap.com/getting-started/#template" target="_blank">getbootstrap.com</a>.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Build out your main page elements.</h3>
+					<ol>
+						<li>Create a div at the top using the <code>.jumbotron</code> component. Include your name within an <code>&lt;h1&gt;</code>, and an additional <code>&lt;p&gt;</code> with a subtitle if you'd like.</li>
+						<li>Add a <code>section</code> with a <code>.container</code> inside of it.</li>
+						<li>Within the <code>.container</code>, create a grid that has 2 columns, one that is 25% of the page width and one that is 75% <em>(Don't forget the wrapper classes used to make grid rows and columns!)</em></li>
+						<li>Copy this section until you have 4 of them.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Fill in the sections!</h3>
+					<ol>
+						<li>Now we need to fill out our sections! You can include whatever you'd like, but we'll start with:<br/>
+							<ul>
+								<li>About Me</li>
+								<li>Skills</li>
+								<li>Experience</li>
+								<li>Education</li>
+							</ul>
+						</li>
+						<li>Within the smaller column for each section, add the name of that section in a <code>&lt;h2&gt;</code> tag.</li>
+
+					</ol>
+				</section>
+
+				<section>
+					<h3>About Me Section</h3>
+					<ol>
+						<li>Including an image of yourself sounds like a good idea. Let's add two columns within the about me section, one for text and one for an image.</li>
+						<li>In the smaller column, you can add an image of yourself. Choose one of the Bootstrap image classes to style your picture. Make sure it's also responsive!</li>
+						<li>In the larger column, add a few paragraphs about yourself.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Experience Section</h3>
+					<ol>
+						<li></li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Skills Section</h3>
+					<ol>
+						<li></li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Education Section</h3>
+					<ol>
+						<li></li>
+					</ol>
 				</section>
 
 				<section>
@@ -346,14 +464,8 @@
 					<h3>Thank you! Questions?</h3>
 
 				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Girl Develop It</h3>
-					<h4>Special thanks to: Hakim El Hattab / hakim.se</h4>
-				</section>
-
 			</div>
+
 			<footer>
 				<div class="copyright">
 					Intro to Bootstrap -- GDI Rochester --
@@ -361,7 +473,6 @@
 				</div>
 			</footer>
 		</div>
-
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
