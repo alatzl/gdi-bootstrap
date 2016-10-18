@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>girldevelopit-reveal.js - The GDI HTML Presentation Framework</title>
+		<title>GDI Rochester | Intro to Bootstrap</title>
 
 		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
 		<meta name="author" content="Girl Develop It">
@@ -36,10 +36,15 @@
 		<!-- If use the PDF print sheet so students can print slides-->
 
 		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
+		<style type="text/css">
+		.reveal .slides section li {
+			margin-bottom: .3em;
+		}
+		</style>
 	</head>
 
 	<body>
@@ -48,318 +53,490 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-        <!-- Opening -->
+				<!-- Opening -->
 				<section>
 					<img src="img/circle-gdi-logo.png" alt="GDI Logo" class="noborder"/>
-					<h1>GDI Reveal.js</h1>
-					<h2>Girl Develop It's Framework for HTML Presentations</h2>
-					<p>
-						<small>Found at <a href ="https://github.com/girldevelopit/gdi-slides-template">Girl Develop It reveal.js fork</a>.</small>
-					</p>
-					<p>
-						<small>Original Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
-        <!-- Compatibility-->
-				<section>
-					<h2>Heads Up</h2>
-					<p>
-						reveal.js is a framework for easily creating beautiful presentations using HTML. You'll need a browser with
-						support for CSS 3D transforms to see it in its full glory.</p>
-
-						<p>We highly recommend using Chrome, currently, however, the latest version of Safari, mobile Safari (iPad), Firefox and IE9 will work.
-					</p>
+					<h2>Intro to Bootstrap</h2>
+					<br/>
+					<p>with <a href="http://www.alexandraatzl.com">Alexandra Atzl</a></p>
 				</section>
 
 				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides and pinch your way to the overview.
+					<h3>Set up your computer for today</h3>
+					<p>Follow along with the slides at: <br/>
+						<a href="http://alexandraatzl.com/gdi-bootstrap">alexandraatzl.com/gdi-bootstrap</a>
 					</p>
+					<hr>
+					<p>
+						<a href="http://alexandraatzl.com/gdi-responsive/intro-rwd-exercises.zip">Download the zip of files for class</a>
+					</p>
+					<p>Unzip the file to your desktop.</p>
+				</section>
+
+				<section>
+					<h3>Introductions</h3>
+					<ul>
+						<li>What's your name?</li>
+						<li>What are you hoping to learn tonight?</li>
+					</ul>
 				</section>
 
 				<!-- Examples of basic html based slides -->
 				<section>
-					<h2>Marvelous Unordered List</h2>
+					<h3>What is a framework anyway?</h3>
+					<p class="fragment">The basic structure underlying a system.</p>
+					<p class="fragment">Bootstrap is a <strong>front-end framework</strong>:
+						<ul>
+							<li class="fragment">HTML</li>
+							<li class="fragment">CSS</li>
+							<li class="fragment">JS</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h3>Why use Bootstrap?</h3>
 					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
+						<li class="fragment">Responsive and mobile-first</li>
+						<li class="fragment">Pre-built utility classes, base styles, normalization, and more</li>
+						<li class="fragment">Components for common page elements (nav bars, media objects)</li>
+						<li class="fragment">jQuery plugins</li>
+						<li class="fragment">LOTS of documentation, examples, and community support</li>
 					</ul>
 				</section>
 
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
+					<h3>Would you ever not use Bootstrap?</h3>
+					<ul>
+						<li class="fragment">Highly customized styling</li>
+						<li class="fragment">Single page, minimally-styled site with no need for extras (but you could use just the parts of Bootstrap that are necessary!)</li>
+					</ul>
 				</section>
 
-                <section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-                    <p>P.S. This won't work when running the slides locally unless you run reveal.js runs from a local web server.</p>
+				<section>
+					<h3>Mobile first</h3>
+					<ul>
+						<li class="fragment">It's easier to add things in than to take them out.</li>
+						<li class="fragment">Progressive enhancement vs. graceful degradation.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>This site looks great on mobile...</h3>
+					<img src="img/bootstrapExample_mobile.png" />
+				</section>
+
+				<section>
+					<h3>...and tablet...</h3>
+					<img src="img/bootstrapExample_tablet.png" />
+				</section>
+
+				<section>
+					<h3>...and desktop!</h3>
+					<img src="img/bootstrapExample_desktop.png" />
+				</section>
+
+				<section>
+					<h3>Exercise: Download Bootstrap</h3>
+					<p>Navigate to <a href="http://getbootstrap.com/getting-started/#download" target="_blank">getbootstrap.com/getting-started/#download</a></p>
+					<hr>
+					<p>Click <strong>Download Bootstrap</strong></p>
+					<hr>
+					<p>Unzip the folder you just downloaded</p>
+				</section>
+
+				<section>
+					<h3>What comes with Bootstrap?</h3>
+					<img src="img/bootstrapFileStructure.png" />
+				</section>
+
+				<section>
+					<h3>Grid</h3>
+					<img src="img/grid.png" />
+				</section>
+
+				<section>
+					<h3>Grid</h3>
+					<ul>
+						<li class="fragment"><a href="http://getbootstrap.com/css/#grid-example-basic" target="_blank">getbootstrap.com/css/#grid-example-basic</a></li>
+						<li class="fragment">Rows create horizontal groups of columns</li>
+						<li class="fragment">Rows must be placed within a <code>.container</code> or <code>.container-fluid</code></li>
+						<li class="fragment">Rows can be nested within columns</li>
+						<li class="fragment">Classes are based on screen size (xs, sm, md, lg)</li>
+					</ul>
 
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						<ul>
+							<li>Media queries:
+								<ul>
+									<li>xs: less than 768px</li>
+									<li>sm: 768px and up</li>
+									<li>md: 992px and up</li>
+									<li>lg: 1200px and up</li>
+								</ul>
+							</li>
+							<li>If not given a <code>.col-*</code> class for a smaller screen size, the column will stretch to full-width (like <code>.col-xs-12</code> would).
+							</li>
+						</ul>
+
 					</aside>
 				</section>
 
-				<!-- Examples of code slides-->
 				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>For HTML -- Surround your code pre, then code class "xml".</p>
-<pre><code class="xml">&lt;ul class="demo"&gt;
-  &lt;li&gt;No order here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-				</section>
-
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>We can also make code editable</p>
-<pre><code contenteditable class="xml">&lt;ul class="demo"&gt;
-  &lt;li&gt;No order here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-  &lt;li&gt;Or here&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-				</section>
-
-
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>CSS</p>
-<pre><code contenteditable class ="css">body{
-  background-color: #ffffff;
-}
-</code></pre>
-				</section>
-
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>Javascript</p>
-<pre><code contenteditable class ="javascript">function helloWorld(){
-  var name = 'GDI';
-  alert("Hi, " + name)
-}
-</code></pre>
-				</section>
-
-				<section>
-					  <h2>But wait! We teach code</h2>
-					  <p>PHP</p>
-<pre><code contenteditable class ="php">function helloWorld(){
-  $name = 'GDI';
-  echo "Hi, " . $name;
-}
-</code></pre>
-				</section>
-
-				<section>
-					  <h2>But wait! We teach code</h2>
-<p>Ruby</p><pre><code contenteditable class ="ruby">def hello_world
-  @name = 'GDI'
-  puts "Hi, #{@name}"
-end
-</code></pre>
-				</section>
-
-         <section>
- 					  <h2>But wait! We teach code</h2>
- 					  <p>Python</p>
-<pre><code contenteditable class ="python">def hello_world():
-  name = "GDI"
-  print 'Hi, ' + name
-  return
-</code></pre>
- 				</section>
-
- 				 <section>
- 					  <h2>But wait! We teach code</h2>
- 					  <p>Java</p>
-<pre><code contenteditable class ="java">public void helloWorld(){
-  String name = "GDI";
-  System.out.println("Hi," + name)
-}
-</code></pre>
- 				</section>
-
-
-        <!-- Elements entering one at a time-->
-        <section>
-					<section>
-						<h2>Fragmented Views</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<ol>
-							<li class="fragment"><code>any type</code></li>
-							<li class="fragment"><em>of view</em></li>
-							<li class="fragment"><strong>fragments</strong></li>
-						</ol>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's a few styles of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-green">highlight-green</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,
-							try pressing <a href="#/14/1">down</a>.
-						</p>
-						<a href="#/14/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-						<a href="#/14/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
-						<a href="#/14" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<a href="#/14/3" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow"></a>
-						<a href="#/14/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/14" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview. Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
-
-				<section>
-					<h2>rvl.io</h2>
-					<p>
-						You know, we are nerds after all and will probably get a kick out of all of this HTML. BUT, if you really don't like writing slides in HTML you can use the online editor <a href="http://www.rvl.io" target="_blank">rvl.io</a>.
-					</p>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=cube#/transitions">Cube</a> -
-						<a href="?transition=page#/transitions">Page</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a> -
-						<a href="?transition=linear#/transitions">Linear</a> -
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?#/transitions">Default</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						Reveal.js comes with a few themes built in: <br>
-            <a href="?theme=gdicool#/themes">GDI Cool</a> -
-            <a href="?theme=gdilight#/themes">GDI Light</a> -
-            <a href="?theme=gdisunny#/themes">GDI Sunny</a> -
-            <a href="?theme=gdidefault#/themes">Default</a>
-					</p>
-					<p>
-						<small>
-							* Theme demos are loaded after the presentation which leads to flicker. In production you should load your theme in the <code>&lt;head&gt;</code> using a <code>&lt;link&gt;</code>.
-						</small>
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
-				</section>
-
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/1">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
-						during a presentation.
-					</p>
-				</section>
-
-				<section>
-					<h1>THE END</h1>
-					<h3>BY Girl Develop It</h3>
-					<h4>Special thanks to: Hakim El Hattab / hakim.se</h4>
-				</section>
-
-			</div>
-  		<footer>
-        <div class="copyright">
-          Official class name here -- Chapter name here (if content modified from original) --
-          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
-        </div>
-      </footer>
+					<h3>Code Example</h3>
+<pre><code class="xml">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			This is my first column!
 		</div>
+		<div class="col-md-4">
+			This is my second column!
+		</div>
+		<div class="col-md-4">
+			This is my third column!
+		</div>
+	</div>
+</div>
+</code></pre>
+				</section>
 
+			<!-- Maybe live-code a little bit here -->
+			<!-- 	<section>
+					<h2>Let's try it!</h2>
+					<ol>
+						<li>Create a single column layout</li>
+						<li>Change this to a 2-column layout</li>
+						<li>Update your page so that on mobile, you have a 1-column layout, and for tablet and desktop it changes to 2.</li>
+						<li>Update your code once more, so that mobile has 1 column, tablet has 2, and desktop has 3 (hint: this will require nesting!)</li>
+					</ol>
+
+					<aside class="notes">
+						<ul>
+							<li>Try it with <code>.container</code></li>
+							<li>Try nesting</li>
+						</ul>
+				</section> -->
+
+				<section>
+					<h3>More CSS goodies!</h3>
+					<ul>
+						<li class="fragment">
+							<a href="http://getbootstrap.com/css/#type-alignment" target="_blank">Alignment classes</a>
+							<ul>
+								<li class="fragment"><code>.text-left</code></li>
+								<li class="fragment"><code>.text-center</code></li>
+								<li class="fragment"><code>.text-right</code></li>
+							</ul>
+						</li>
+						<li class="fragment">
+							<a href="http://getbootstrap.com/css/#type-transformation" target="_blank">Transformation classes</a>
+							<ul>
+								<li class="fragment"><code>.text-lowercase</code></li>
+								<li class="fragment"><code>.text-uppercase</code></li>
+								<li class="fragment"><code>.text-capitalize</code></li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+			<!-- 	<section>
+					<h3>Code Example</h3>
+<pre><code contenteditable class="xml">
+<div class="row">
+	<div class="col-md-4">
+		<p class="text-left">
+			This is left aligned. <br/>
+			And <span class="text-uppercase">this is uppercase.</span>
+		</p>
+	</div>
+	<div class="col-md-4">
+		<p class="text-center">
+			This is centered. This is centered. This is centered.
+			It's totally centered. Center center center.
+		</p>
+	</div>
+	<div class="col-md-4">
+		<p class="text-right">
+			This is right-aligned.<br/>
+			And <span class="text-capitalize">this text is now capitalized.</span>
+		</p>
+	</div>
+</div>
+</code></pre>
+				</section> -->
+
+			<!-- 	<section>
+					<h3>Let's try it!</h3>
+					<ol>
+						<li>Make one of your columns aligned to the right or center.</li>
+						<li>Add a line to the top of your page that is in all caps.</li>
+					</ol>
+				</section> -->
+
+				<!-- <section>
+					<h3>Lists &amp; Tables</h3>
+					<ul>
+						<li class="fragment">
+							<a href="http://getbootstrap.com/css/#type-lists" target="_blank">Lists</a>
+							<ul>
+								<li class="fragment">Lists are already styled and normalized.</li>
+								<li class="fragment"><code>.list-unstyled</code></li>
+							</ul>
+						</li>
+						<br/>
+						<li class="fragment">
+							<a href="http://getbootstrap.com/css/#tables" target="_blank">Tables</a>
+							<ul>
+								<li class="fragment">Pre-defined table classes for easier styling.</li>
+								<li class="fragment"><code>.table</code></li>
+								<li class="fragment"><code>.table-striped</code></li>
+								<li class="fragment"><code>.table-bordered</code></li>
+							</ul>
+						</li>
+					</ul>
+				</section> -->
+
+		<!-- 		<section>
+					<h3>Let's try it!</h3>
+					<ol>
+						<li>Add a list of something to your webpage.</li>
+						<li>Add a table to your webpage.</li>
+					</ol>
+				</section> -->
+
+				<section>
+					<h3>Helper Classes</h3>
+					<ul>
+						<li class="fragment">contextual colors</li>
+						<li class="fragment">floats</li>
+						<li class="fragment">centering</li>
+						<li class="fragment">clearfix</li>
+						<li class="fragment">hide/show</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Responsive Utilities</h3>
+					<ul>
+						<li><code>.hidden-*-*</code></li>
+						<li><code>.visible-*-*</code></li>
+					</ul>
+					<br/><br/>
+					<h3>And Image Classes</h3>
+					<ul>
+						<li><code>.img-responsive</code></li>
+						<li><code>.img-circle</code>, <code>.img-rounded</code>, <code>.img-thumbnail</code></li>
+					</ul>
+				</section>
+
+				<!-- live-code a little here? -->
+
+				<!-- <section>
+					<h3>Let's try it!</h3>
+					<ul>
+						<li>Let's go back to our 3-column layout and change it so that the third column only shows up on medium and large screen widths.</li>
+					</ul>
+				</section> -->
+
+				<section>
+					<h3>Components</h3>
+					<p>Bootstrap comes with a number of reusable components.</p>
+					<ul>
+						<li class="fragment">Dropdowns</li>
+						<li class="fragment">Navigation</li>
+						<li class="fragment">Jumbotron</li>
+						<li class="fragment">Media Object</li>
+						<li class="fragment">And more!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Code Example: Navbar</h3>
+<pre><code class="xml">
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-list">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="nav-list">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</code></pre>
+				</section>
+
+				<section>
+					<h3>jQuery Plugins</h3>
+					<ul>
+						<li class="fragment">Collapse</li>
+						<li class="fragment">Scrollspy</li>
+						<li class="fragment">Tooltips</li>
+						<li class="fragment">Modals</li>
+						<li class="fragment">and more!</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Let's try it all out!</h3>
+					<ol>
+						<li>Create a folder name <code>resume</code> on your computer.</li>
+						<li>Move the <code>/css</code>, <code>/js</code>, and <code>/font</code> folders you downloaded earlier into <code>/resume</code>.</li>
+						<li>Create an index.html file inside <code>/resume</code>. You can copy and paste the Bootstrap starter file from <a href="http://getbootstrap.com/getting-started/#template" target="_blank">getbootstrap.com</a>.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Build out your main page elements.</h3>
+					<ol>
+						<li>Create a div at the top using the <code>.jumbotron</code> component. Include your name within an <code>&lt;h1&gt;</code>, and an additional <code>&lt;p&gt;</code> with a subtitle if you'd like.</li>
+						<li>Add a <code>section</code> with a <code>.container</code> inside of it.</li>
+						<li>Within the <code>.container</code>, create a grid that has 2 columns, one that is 25% of the page width and one that is 75% <em>(Don't forget the wrapper classes used to make grid rows and columns!)</em></li>
+						<li>Copy this section until you have 4 of them.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Fill in the sections!</h3>
+					<ol>
+						<li>Now we need to fill out our sections! You can include whatever you'd like, but we'll start with:<br/>
+							<ul>
+								<li>About Me</li>
+								<li>Skills</li>
+								<li>Experience</li>
+								<li>Education</li>
+							</ul>
+						</li>
+						<li>Within the smaller column for each section, add the name of that section in a <code>&lt;h2&gt;</code> tag.</li>
+						<li>Give each section an appropriate id; this is how we will navigate to sections later when we implement a navbar.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>About Me Section</h3>
+					<ol>
+						<li>Including an image of yourself sounds like a good idea. Let's add two columns within the about me section, one for text and one for an image.</li>
+						<li>In the smaller column, you can add an image of yourself. Choose one of the Bootstrap image classes to style your picture. Make sure it's also responsive!</li>
+						<li>In the larger column, add a few paragraphs about yourself.</li>
+						<li>Make sure these columns stack one on top of the other on smaller screens.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Experience Section</h3>
+					<ol>
+						<li>Let's add some nested columns so we can display dates alongside your relevant experience. Add 2 columns to the Skills section, one that is 1/3 the total width and one that is 2/3 the total width.</li>
+						<li>Make sure these columns stack on smaller screens (what classes help you do that?)</li>
+						<li>In the smaller column, add your job title, location, and dates.</li>
+						<li>In the larger column, add the details of your position as a bulleted list.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Skills Section</h3>
+					<ol>
+						<li>Add several <code>&lt;h5&gt;</code> tags, one for each skill you'd like to list.</li>
+						<li>Add a progress bar beneath each <code>&lt;h5&gt;</code> tag, to show how confident you are in each skill.</li>
+						<li>
+<pre><code class="xml">
+<!-- <div class="progress">
+  <div class="progress-bar"></div>
+</div> -->
+</code></pre>
+						</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Education Section</h3>
+					<ol>
+						<li>Add <code>&lt;h3&gt;</code> tags for each educational item you'd like to list to the education section.</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Adding Navigation</h3>
+					<ol>
+						<li>Let's add a navbar to the top of our page.</li>
+						<li>We'll want to have a menu that collapses on mobile, and shows up on desktop screens.</li>
+						<li>The menu should also link to each section of the page (using the ids we added earlier).</li>
+						<li>It would be nice if the navbar was fixed to the top of the screen...what class can you use for that?</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Adding Navigation</h3>
+<pre><code class="xml">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navlist" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navlist">
+      <ul class="nav navbar-nav" id="navlist">
+        <li class="active"><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</code></pre>
+				</section>
+
+				<section>
+					<h3>Adding some Javascript</h3>
+					<ol>
+						<li>Let's add Bootstrap's <strong>scrollspy</strong> plugin so that we can track what section the user is currently in on the page.</li>
+						<li>Make sure you are using Bootstrap's <code>navbar</code> component.</li>
+						<li>The target for the scrollspy javascript will be the div containing the nav list. Give this div an id to use when targeting it.</li>
+<pre><code>
+$('body').scrollspy({ target: '#navlist' });
+</code></pre>
+					</ol>
+				</section>
+
+				<section>
+					<h3>TA DA!</h3>
+					<img src="img/finalProduct.png" />
+				</section>
+
+				<section>
+					<h3>What else?</h3>
+					<ul>
+						<li class="fragment">All the other <a href="http://getbootstrap.com/components/" target="_blank">components</a> and <a href="http://getbootstrap.com/javascript/" target="_blank">plugins</a> we didn't get to today!</li>
+						<li class="fragment">Customizing Bootstrap</li>
+						<li class="fragment">CSS Compilers (Less, Sass)</li>
+						<li class="fragment">Bootstrap Themes</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Thank you! Questions?</h3>
+
+				</section>
+			</div>
+
+			<footer>
+				<div class="copyright">
+					Intro to Bootstrap -- GDI Rochester --
+					<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+				</div>
+			</footer>
+		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
@@ -368,7 +545,7 @@ end
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
-            Reveal.initialize({
+						Reveal.initialize({
 				controls: true,
 				progress: true,
 				history: true,
@@ -384,7 +561,7 @@ end
 					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true },
-                    { src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
+										{ src: 'plugin/accessibility-helper/js/accessibility-helper.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 
