@@ -416,7 +416,7 @@
 							</ul>
 						</li>
 						<li>Within the smaller column for each section, add the name of that section in a <code>&lt;h2&gt;</code> tag.</li>
-
+						<li>Give each section an appropriate id; this is how we will navigate to sections later when we implement a navbar.</li>
 					</ol>
 				</section>
 
@@ -426,36 +426,100 @@
 						<li>Including an image of yourself sounds like a good idea. Let's add two columns within the about me section, one for text and one for an image.</li>
 						<li>In the smaller column, you can add an image of yourself. Choose one of the Bootstrap image classes to style your picture. Make sure it's also responsive!</li>
 						<li>In the larger column, add a few paragraphs about yourself.</li>
+						<li>Make sure these columns stack one on top of the other on smaller screens.</li>
 					</ol>
 				</section>
 
 				<section>
 					<h3>Experience Section</h3>
 					<ol>
-						<li></li>
+						<li>Let's add some nested columns so we can display dates alongside your relevant experience. Add 2 columns to the Skills section, one that is 1/3 the total width and one that is 2/3 the total width.</li>
+						<li>Make sure these columns stack on smaller screens (what classes help you do that?)</li>
+						<li>In the smaller column, add your job title, location, and dates.</li>
+						<li>In the larger column, add the details of your position as a bulleted list.</li>
 					</ol>
 				</section>
 
 				<section>
 					<h3>Skills Section</h3>
 					<ol>
-						<li></li>
+						<li>Add several <code>&lt;h5&gt;</code> tags, one for each skill you'd like to list.</li>
+						<li>Add a progress bar beneath each <code>&lt;h5&gt;</code> tag, to show how confident you are in each skill.</li>
+						<li>
+<pre><code class="xml">
+<!-- <div class="progress">
+  <div class="progress-bar"></div>
+</div> -->
+</code></pre>
+						</li>
 					</ol>
 				</section>
 
 				<section>
 					<h3>Education Section</h3>
 					<ol>
-						<li></li>
+						<li>Add <code>&lt;h3&gt;</code> tags for each educational item you'd like to list to the education section.</li>
 					</ol>
+				</section>
+
+				<section>
+					<h3>Adding Navigation</h3>
+					<ol>
+						<li>Let's add a navbar to the top of our page.</li>
+						<li>We'll want to have a menu that collapses on mobile, and shows up on desktop screens.</li>
+						<li>The menu should also link to each section of the page (using the ids we added earlier).</li>
+						<li>It would be nice if the navbar was fixed to the top of the screen...what class can you use for that?</li>
+					</ol>
+				</section>
+
+				<section>
+					<h3>Adding Navigation</h3>
+<pre><code class="xml">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navlist" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navlist">
+      <ul class="nav navbar-nav" id="navlist">
+        <li class="active"><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</code></pre>
+				</section>
+
+				<section>
+					<h3>Adding some Javascript</h3>
+					<ol>
+						<li>Let's add Bootstrap's <strong>scrollspy</strong> plugin so that we can track what section the user is currently in on the page.</li>
+						<li>Make sure you are using Bootstrap's <code>navbar</code> component.</li>
+						<li>The target for the scrollspy javascript will be the div containing the nav list. Give this div an id to use when targeting it.</li>
+<pre><code>
+$('body').scrollspy({ target: '#navlist' });
+</code></pre>
+					</ol>
+				</section>
+
+				<section>
+					<h3>TA DA!</h3>
+					<img src="img/finalProduct.png" />
 				</section>
 
 				<section>
 					<h3>What else?</h3>
 					<ul>
 						<li class="fragment">All the other <a href="http://getbootstrap.com/components/" target="_blank">components</a> and <a href="http://getbootstrap.com/javascript/" target="_blank">plugins</a> we didn't get to today!</li>
-						<li class="fragment">CSS Compilers (Less, Sass)</li>
 						<li class="fragment">Customizing Bootstrap</li>
+						<li class="fragment">CSS Compilers (Less, Sass)</li>
 						<li class="fragment">Bootstrap Themes</li>
 					</ul>
 				</section>
