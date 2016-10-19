@@ -6,8 +6,8 @@
 
 		<title>GDI Rochester | Intro to Bootstrap</title>
 
-		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
-		<meta name="author" content="Girl Develop It">
+		<meta name="description" content="GDI Rochester | Intro to Bootstrap">
+		<meta name="author" content="Girl Develop It Rochester">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -17,8 +17,6 @@
 
 		<!-- For syntax highlighting -->
 		<!-- light editor --><link rel="stylesheet" href="lib/css/light.css">
-		<!-- dark editor <link rel="stylesheet" href="lib/css/dark.css">-->
-		<!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
 
 		<link rel="stylesheet" href="plugin/accessibility-helper/css/accessibility-helper.css">
 
@@ -34,7 +32,6 @@
 		</script>
 
 		<!-- If use the PDF print sheet so students can print slides-->
-
 		<link rel="stylesheet" href="css/print/pdf.css" type="text/css" media="print">
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 		<!--[if lt IE 9]>
@@ -48,12 +45,9 @@
 	</head>
 
 	<body>
-
 		<div class="reveal">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<!-- Opening -->
 				<section>
 					<img src="img/circle-gdi-logo.png" alt="GDI Logo" class="noborder"/>
 					<h2>Intro to Bootstrap</h2>
@@ -66,11 +60,6 @@
 					<p>Follow along with the slides at: <br/>
 						<a href="http://alexandraatzl.com/gdi-bootstrap">alexandraatzl.com/gdi-bootstrap</a>
 					</p>
-					<hr>
-					<p>
-						<a href="http://alexandraatzl.com/gdi-responsive/intro-rwd-exercises.zip">Download the zip of files for class</a>
-					</p>
-					<p>Unzip the file to your desktop.</p>
 				</section>
 
 				<section>
@@ -81,7 +70,6 @@
 					</ul>
 				</section>
 
-				<!-- Examples of basic html based slides -->
 				<section>
 					<h3>What is a framework anyway?</h3>
 					<p class="fragment">The basic structure underlying a system.</p>
@@ -106,7 +94,7 @@
 				</section>
 
 				<section>
-					<h3>Would you ever not use Bootstrap?</h3>
+					<h3>When is Bootstrap not the best choice?</h3>
 					<ul>
 						<li class="fragment">Highly customized styling</li>
 						<li class="fragment">Single page, minimally-styled site with no need for extras (but you could use just the parts of Bootstrap that are necessary!)</li>
@@ -178,7 +166,6 @@
 							<li>If not given a <code>.col-*</code> class for a smaller screen size, the column will stretch to full-width (like <code>.col-xs-12</code> would).
 							</li>
 						</ul>
-
 					</aside>
 				</section>
 
@@ -199,24 +186,16 @@
 	</div>
 </div>
 </code></pre>
-				</section>
-
-			<!-- Maybe live-code a little bit here -->
-			<!-- 	<section>
-					<h2>Let's try it!</h2>
+					<aside class="notes">
+					Live-code an example
 					<ol>
 						<li>Create a single column layout</li>
 						<li>Change this to a 2-column layout</li>
 						<li>Update your page so that on mobile, you have a 1-column layout, and for tablet and desktop it changes to 2.</li>
 						<li>Update your code once more, so that mobile has 1 column, tablet has 2, and desktop has 3 (hint: this will require nesting!)</li>
 					</ol>
-
-					<aside class="notes">
-						<ul>
-							<li>Try it with <code>.container</code></li>
-							<li>Try nesting</li>
-						</ul>
-				</section> -->
+					</aside>
+				</section>
 
 				<section>
 					<h3>More CSS goodies!</h3>
@@ -238,72 +217,12 @@
 							</ul>
 						</li>
 					</ul>
+					<aside class="notes">
+						<ol>
+							<li>Show an example or two in code.</li>
+						</ol>
+					</aside>
 				</section>
-
-			<!-- 	<section>
-					<h3>Code Example</h3>
-<pre><code contenteditable class="xml">
-<div class="row">
-	<div class="col-md-4">
-		<p class="text-left">
-			This is left aligned. <br/>
-			And <span class="text-uppercase">this is uppercase.</span>
-		</p>
-	</div>
-	<div class="col-md-4">
-		<p class="text-center">
-			This is centered. This is centered. This is centered.
-			It's totally centered. Center center center.
-		</p>
-	</div>
-	<div class="col-md-4">
-		<p class="text-right">
-			This is right-aligned.<br/>
-			And <span class="text-capitalize">this text is now capitalized.</span>
-		</p>
-	</div>
-</div>
-</code></pre>
-				</section> -->
-
-			<!-- 	<section>
-					<h3>Let's try it!</h3>
-					<ol>
-						<li>Make one of your columns aligned to the right or center.</li>
-						<li>Add a line to the top of your page that is in all caps.</li>
-					</ol>
-				</section> -->
-
-				<!-- <section>
-					<h3>Lists &amp; Tables</h3>
-					<ul>
-						<li class="fragment">
-							<a href="http://getbootstrap.com/css/#type-lists" target="_blank">Lists</a>
-							<ul>
-								<li class="fragment">Lists are already styled and normalized.</li>
-								<li class="fragment"><code>.list-unstyled</code></li>
-							</ul>
-						</li>
-						<br/>
-						<li class="fragment">
-							<a href="http://getbootstrap.com/css/#tables" target="_blank">Tables</a>
-							<ul>
-								<li class="fragment">Pre-defined table classes for easier styling.</li>
-								<li class="fragment"><code>.table</code></li>
-								<li class="fragment"><code>.table-striped</code></li>
-								<li class="fragment"><code>.table-bordered</code></li>
-							</ul>
-						</li>
-					</ul>
-				</section> -->
-
-		<!-- 		<section>
-					<h3>Let's try it!</h3>
-					<ol>
-						<li>Add a list of something to your webpage.</li>
-						<li>Add a table to your webpage.</li>
-					</ol>
-				</section> -->
 
 				<section>
 					<h3>Helper Classes</h3>
@@ -328,16 +247,13 @@
 						<li><code>.img-responsive</code></li>
 						<li><code>.img-circle</code>, <code>.img-rounded</code>, <code>.img-thumbnail</code></li>
 					</ul>
+					<aside class="notes">
+						<ol>
+							<li>Hide/show a column.</li>
+							<li>Add a responsive image (kitten).</li>
+						</ol>
+					</aside>
 				</section>
-
-				<!-- live-code a little here? -->
-
-				<!-- <section>
-					<h3>Let's try it!</h3>
-					<ul>
-						<li>Let's go back to our 3-column layout and change it so that the third column only shows up on medium and large screen widths.</li>
-					</ul>
-				</section> -->
 
 				<section>
 					<h3>Components</h3>
@@ -349,6 +265,12 @@
 						<li class="fragment">Media Object</li>
 						<li class="fragment">And more!</li>
 					</ul>
+					<aside class="notes">
+						<ol>
+							<li>Show an example on Bootstrap's website.</li>
+							<li>Touch on the navbar.</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section>
@@ -383,6 +305,11 @@
 						<li class="fragment">Modals</li>
 						<li class="fragment">and more!</li>
 					</ul>
+					<aside class="notes">
+						<ol>
+							<li>Show an example.</li>
+						</ol>
+					</aside>
 				</section>
 
 				<section>
@@ -512,6 +439,7 @@ $('body').scrollspy({ target: '#navlist' });
 				<section>
 					<h3>TA DA!</h3>
 					<img src="img/finalProduct.png" />
+					<p>You can download a completed example <a href="exercise/completed.zip">here</a>.</p>
 				</section>
 
 				<section>
@@ -526,7 +454,6 @@ $('body').scrollspy({ target: '#navlist' });
 
 				<section>
 					<h3>Thank you! Questions?</h3>
-
 				</section>
 			</div>
 
